@@ -7,7 +7,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// SQLite kapcsolat
 builder.Services.AddDbContext<EuroskillsContext>(options =>
     options.UseSqlite("Data Source=euroskills2018.db"));
 
